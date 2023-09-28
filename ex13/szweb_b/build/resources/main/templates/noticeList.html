@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通知通告列表</title>
+</head>
+<body>
+<div style="text-align: center">
+    <table style="width: 80%;margin:0 auto;padding: 20px">
+        <tr style="text-align: center;padding: 20px">
+            <th>编号</th>
+            <th>标题</th>
+            <th>更新时间</th>
+        </tr>
+        <tr style="text-align: center;padding: 20px" data-th-each="notice:${notices}">
+            <td data-th-text="${notice.id}"></td>
+            <td data-th-text="${notice.title}">/td>
+            <td data-th-text="${notice.updateTime}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

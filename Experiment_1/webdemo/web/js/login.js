@@ -1,0 +1,10 @@
+function valid() {
+    let username = document.getElementById("username" );
+    let password = document.getElementById("password" );
+    if (username.value == ""|| password.value == "") {
+        alert("用户名或密码不能为空!");
+        return false;
+        }else {
+        return true;
+    }
+}
